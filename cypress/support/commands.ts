@@ -1,25 +1,26 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+declare global {
+    namespace Cypress {
+        interface Chainable<Subject> {
+            /**
+             * Yields window with opened url with given cookies
+             *
+             * @param url url to site to open
+             * @param cookies list of cookies to add
+             * @returns Window
+             * @memberof Chainable
+             * @example
+             *    cy.visitWithCookies("www.comparethemarket.com", [COOKIE_1, COOKIE_2])
+             */
+            visitWithCookies(pagePath: string, cookies: Array<Cypress.Cookie>): Chainable<Window>;
+        }
+  }
+}
+
+Cypress.Commands.add("visitWithCookies", (pagePath: string, cookies: Array<Cypress.Cookie>) => {
+    cookies.forEach(cookie => {
+        cy.setCookie(cookie.name, cookie.value)    
+    });
+    cy.visit(pagePath);
+});
+
+export {};

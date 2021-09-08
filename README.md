@@ -1,7 +1,7 @@
-###Code
+### Code
 Each stage of training is tagged, you can easily jump between stages.
 
-###Documentation:
+###  Documentation:
 
 TypeScript - https://www.typescriptlang.org/
 
@@ -17,7 +17,7 @@ cy.its() - https://docs.cypress.io/api/commands/its
 
 aliases: https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Aliases
 
-###Homework:
+### Homework:
 
 1. Write a test to check if link event is sent on click on link in 'Related Articles' section.
 2. Let's try to do a refactoring. Tip: use a custom commands.

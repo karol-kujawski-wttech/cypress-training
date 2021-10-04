@@ -23,7 +23,14 @@ declare namespace Cypress {
 
 Cypress.Commands.add("visitWithCookies", (pagePath: string, cookies: Array<Cypress.Cookie>) => {
     cookies.forEach(cookie => {
-        cy.setCookie(cookie.name, cookie.value)    
+        cy.setCookie(cookie.name, cookie.value, {
+            path: cookie.path,
+            domain: cookie.domain,
+            secure: cookie.secure,
+            httpOnly: cookie.httpOnly,
+            expiry: cookie.expiry,
+            sameSite: cookie.sameSite
+        })    
     });
     cy.visit(pagePath);
 });

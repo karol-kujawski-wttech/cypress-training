@@ -24,14 +24,3 @@ export const UNI_CONSENT_COOKIE : Cypress.Cookie = {
     httpOnly: false,
     secure: false
 }
-
-export const OLX_CONSENT_COOKIE : Cypress.Cookie = {
-    name: "OptanonAlertBoxClosed",
-    value: "2021-10-04T12:41:29.952Z",
-    expiry: 1635724799,
-    path: "/",
-    domain: ".olx.pl",
-    httpOnly: false,
-    secure: false,
-    sameSite: 'lax'
-}

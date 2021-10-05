@@ -1,4 +1,4 @@
-import { UNI_CONSENT_COOKIE, CONSENTMGR, CONSENTMGR_v, OLX_CONSENT_COOKIE } from "../../fixtures/cookies"
+import { UNI_CONSENT_COOKIE, CONSENTMGR, CONSENTMGR_v } from "../../fixtures/cookies"
 
 it("Lazy loading", () => {
   // https://docs.cypress.io/api/commands/scrollto#Syntax

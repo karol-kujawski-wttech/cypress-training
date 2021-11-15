@@ -18,15 +18,6 @@ it("Region ignoring", () => {
   });
 });
 
-it("Element screenshot", () => {
-  // https://docs.percy.io/docs/percy-specific-css#percy-css-media-query
-  // https://github.com/percy/percy-cypress/issues/56
-  cy.visitWithCookies("https://comparethemarket.com", [CONSENTMGR_v, CONSENTMGR])
-  cy.get("#content").invoke("hide");
-  cy.get(".gbl-ftr").invoke("hide");
-  cy.percySnapshot();
-});
-
 it("Search result tweak", () => {
   cy.visit("https://www.olx.pl/oferty/q-laptop/");
   cy.get("#onetrust-accept-btn-handler").click();
@@ -44,4 +35,13 @@ it("Search result tweak", () => {
       widths: [968, 1024]
     }
   )
+});
+
+it("Element screenshot", () => {
+  // https://docs.percy.io/docs/percy-specific-css#percy-css-media-query
+  // https://github.com/percy/percy-cypress/issues/56
+  cy.visitWithCookies("https://comparethemarket.com", [CONSENTMGR_v, CONSENTMGR])
+  cy.get("#content").invoke("hide");
+  cy.get(".gbl-ftr").invoke("hide");
+  cy.percySnapshot();
 });

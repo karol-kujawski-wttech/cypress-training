@@ -1,0 +1,104 @@
+name: Build, check and deploy PR change to AWS.
+
+on:
+  push:
+    branches:
+      - main
+    workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build Form Widget
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up node
+        run: echo "Building App Finished!"
+
+  test:
+    needs: deploy
+    name: 'Tests'
+    runs-on: ubuntu-latest
+    container: 'cypress/browsers:node16.5.0-chrome94-ff93'
+    steps:
+      - name: 'Clone Git repo'
+        uses: actions/checkout@v2
+
+      - name: Run Cypress Tests
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: tests/functional
+          browser: chrome
+          spec: |
+            cypress/integration/functional/**
+
+      # - name: Run Percy
+      #   uses: cypress-io/github-action@v2
+      #   with:
+      #     command-prefix: "percy exec -- yarn"
+      #     working-directory: tests/functional
+      #     browser: chrome
+      #     spec: cypress/integration/visual/**
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Get Timestamp
+        id: timestamp
+        uses: nanzm/get-time-action@v1.1
+        if: always()
+        with:
+          timeZone: 2
+          format: 'YYYYMMDDHHmmss'
+
+      - name: Generate allure Report
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: tests/functional/build/allure-results
+          allure_history: allure-history
+          keep_reports: 20
+          github_run_num: ${{ steps.timestamp.outputs.time }}
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
+
+      - name: Create diretory for Lighthouse reports
+        run: mkdir /tmp/artifacts
+
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
+        with:
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
+          urls: '${{ steps.get_forms_widget_url.outputs.prop }}?id=${{ env.ENV_NAME }}-preview-test-sign-up-form'
+          prCommentEnabled: true
+          prCommentSaveOld: false
+          throttling: 'mobileSlow4G'
+          emulatedFormFactor: 'mobile'
+          outputDirectory: /tmp/artifacts
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: Lighthouse report
+          path: /tmp/artifacts
+
+      - name: Handle Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          minAccessibilityScore: "80"
+          minBestPracticesScore: "80"
+          minPerformanceScore: "70"
+          minProgressiveWebAppScore: "0"
+          minSeoScore: "80"

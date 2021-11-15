@@ -31,6 +31,7 @@ jobs:
             cypress/integration/functional/**
 
       - name: Run Percy
+        if: always()
         uses: cypress-io/github-action@v2
         with:
           command-prefix: "percy exec -- yarn"

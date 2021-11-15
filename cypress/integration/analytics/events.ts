@@ -9,7 +9,7 @@ describe("Analytics - events tracking", () => {
             "EnergyComparison_Energy_FAQBlock_WhoIsTheCheapestEnergySupplier",
     };
 
-    it("Event on page load", () => {
+    it("View event on page load", () => {
         cy.visit("https://www.comparethemarket.com/energy/");
         cy.window().then((win) => {
             // @ts-expect-error
@@ -33,6 +33,15 @@ describe("Analytics - events tracking", () => {
         ).click();
         cy.get("@linkSpy").should("be.calledOnce");
         cy.spyIsCalledWithUtagData("@linkSpy");
+        cy.window().then((win) => {
+            cy.wrap(win)
+                .its("utag_data")
+                .then((utag_data) => {
+                    expect(utag_data)
+                        .to.be.an("object")
+                        .that.include(EXPECTED_PROPERTIES);
+                });
+        });
         cy.window().then((win) => {
             cy.wrap(win)
                 .its("utag_data")

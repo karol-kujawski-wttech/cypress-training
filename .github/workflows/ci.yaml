@@ -6,6 +6,9 @@ on:
       - master
   workflow_dispatch:
 
+env:
+  PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+
 jobs:
   deploy:
     name: Deploy App
@@ -37,6 +40,7 @@ jobs:
           command-prefix: "percy exec -- yarn"
           browser: chrome
           spec: cypress/integration/visual/**
+
 
       - name: Get Allure history
         uses: actions/checkout@v2
@@ -70,37 +74,3 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
-
-      - name: Create diretory for Lighthouse reports
-        run: mkdir /tmp/artifacts
-
-      - name: Run Lighthouse
-        if: always()
-        uses: foo-software/lighthouse-check-action@master
-        id: lighthouseCheck
-        with:
-          accessToken: ${{ secrets.GITHUB_TOKEN }}
-          urls: 'https://www.unilever.com/'
-          prCommentEnabled: true
-          prCommentSaveOld: false
-          throttling: 'mobileSlow4G'
-          emulatedFormFactor: 'mobile'
-          outputDirectory: /tmp/artifacts
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@master
-        if: always()
-        with:
-          name: Lighthouse report
-          path: /tmp/artifacts
-
-      - name: Handle Lighthouse Check results
-        uses: foo-software/lighthouse-check-status-action@master
-        if: always()
-        with:
-          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-          minAccessibilityScore: "80"
-          minBestPracticesScore: "80"
-          minPerformanceScore: "70"
-          minProgressiveWebAppScore: "0"
-          minSeoScore: "80"

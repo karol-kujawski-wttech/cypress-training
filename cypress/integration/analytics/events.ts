@@ -15,15 +15,11 @@ describe("Analytics - events tracking", () => {
             // @ts-expect-error
             cy.spy(win.utag, "view").as("viewSpy");
         });
-        cy.window().then((win) => {
-            cy.get("@viewSpy").should((spy) => {
-                // @ts-expect-error
-                expect(spy).to.be.calledOnceWith(win.utag_data);
-            });
-        });
+        cy.get("@viewSpy").should("be.calledOnce");
+        cy.spyIsCalledWithUtagData("@viewSpy");
     });
 
-    it("Link event on link click", () => {
+    it("Event on link click", () => {
         cy.visitWithCookies("https://www.comparethemarket.com/energy/", [
             CONSENTMGR,
             CONSENTMGR_v,
@@ -35,11 +31,16 @@ describe("Analytics - events tracking", () => {
         cy.get(
             "#EnergyComparison_Energy_FAQBlock_WhoIsTheCheapestEnergySupplier"
         ).click();
+        cy.get("@linkSpy").should("be.calledOnce");
+        cy.spyIsCalledWithUtagData("@linkSpy");
         cy.window().then((win) => {
-            cy.get("@linkSpy").should((spy) => {
-                // @ts-expect-error
-                expect(spy).to.be.calledOnceWith(win.utag_data);
-            });
+            cy.wrap(win)
+                .its("utag_data")
+                .then((utag_data) => {
+                    expect(utag_data)
+                        .to.be.an("object")
+                        .that.include(EXPECTED_PROPERTIES);
+                });
         });
         cy.window().then((win) => {
             cy.wrap(win)

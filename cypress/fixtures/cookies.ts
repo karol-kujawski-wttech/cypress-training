@@ -15,3 +15,12 @@ export const CONSENTMGR_v : Cypress.Cookie = {
     httpOnly: false,
     secure: false
 }
+
+export const UNI_CONSENT_COOKIE : Cypress.Cookie = {
+    name: "OptanonAlertBoxClosed",
+    value: "2021-09-16T12:48:22.814Z",
+    path: "/",
+    domain: "www.unilever.com",
+    httpOnly: false,
+    secure: false
+}

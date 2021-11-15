@@ -1,18 +1,18 @@
-name: Build, check and deploy PR change to AWS.
+name: Deploy & Test
 
 on:
   push:
     branches:
-      - main
+      - master
     workflow_dispatch:
 
 jobs:
   deploy:
-    name: Build Form Widget
+    name: Deploy App
     runs-on: ubuntu-latest
     steps:
-      - name: Set up node
-        run: echo "Building App Finished!"
+      - name: Deploy
+        run: echo "Deploying App Finished!"
 
   test:
     needs: deploy
@@ -26,7 +26,6 @@ jobs:
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v2
         with:
-          working-directory: tests/functional
           browser: chrome
           spec: |
             cypress/integration/functional/**

@@ -40,6 +40,7 @@ jobs:
           command-prefix: "percy exec -- yarn"
           browser: chrome
           spec: cypress/integration/visual/**
+          env: allure=false
 
       - name: Get Allure history
         uses: actions/checkout@v2

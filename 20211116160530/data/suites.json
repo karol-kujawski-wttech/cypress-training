@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Analytics - events tracking",
+    "children" : [ {
+      "name" : "View event on page load",
+      "uid" : "5addc7e5341a7569",
+      "parentUid" : "4aea4f6885b689a6e928559fa76aa52a",
+      "status" : "failed",
+      "time" : {
+        "start" : 1637071450083,
+        "stop" : 1637071460281,
+        "duration" : 10198
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Event on link click",
+      "uid" : "40b6c812bceb38e8",
+      "parentUid" : "4aea4f6885b689a6e928559fa76aa52a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637071460325,
+        "stop" : 1637071463127,
+        "duration" : 2802
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4aea4f6885b689a6e928559fa76aa52a"
+  } ],
+  "name" : "suites"
+}

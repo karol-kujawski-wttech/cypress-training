@@ -1,0 +1,315 @@
+{
+  "uid" : "a618cfc911cf44b1",
+  "name" : "View event on page load",
+  "fullName" : "View event on page load",
+  "historyId" : "4729a68fda615b03e41648730995af91",
+  "time" : {
+    "start" : 1637070789629,
+    "stop" : 1637070801258,
+    "duration" : 11629
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: expected viewSpy to have been called exactly once, but it was never called",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: expected viewSpy to have been called exactly once, but it was never called\n    at Context.eval (https://www.comparethemarket.com/__cypress/tests?p=cypress/integration/functional/events.ts:152:28)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 4000ms: expected viewSpy to have been called exactly once, but it was never called",
+    "statusTrace" : "AssertionError: Timed out retrying after 4000ms: expected viewSpy to have been called exactly once, but it was never called\n    at Context.eval (https://www.comparethemarket.com/__cypress/tests?p=cypress/integration/functional/events.ts:152:28)",
+    "steps" : [ {
+      "name" : "visit https://www.comparethemarket.com/energy/",
+      "time" : {
+        "start" : 1637070789664,
+        "stop" : 1637070797000,
+        "duration" : 7336
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 /customisation/affclie/",
+      "time" : {
+        "start" : 1637070796999,
+        "stop" : 1637070796999,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "POST 200 https://o381043.ingest.sentry.io/api/5715637/envelope/?sentry_key=2baaf72bdd63453dbeabd5887942b83d&sentry_version=7",
+      "time" : {
+        "start" : 1637070796999,
+        "stop" : 1637070796999,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "POST 200 https://stodctm.u5e.com/6003/handler9/session.json",
+      "time" : {
+        "start" : 1637070796999,
+        "stop" : 1637070796999,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 /api/ip/",
+      "time" : {
+        "start" : 1637070796999,
+        "stop" : 1637070796999,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "POST 200 /customisation/affclie/",
+      "time" : {
+        "start" : 1637070796999,
+        "stop" : 1637070796999,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get https://dpm.demdex.net/id?d_visid_ver=4.3.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=F4DB44D75C7CF5CF0A495D58@AdobeOrg&d_nsid=0&ts=1637070793851",
+      "time" : {
+        "start" : 1637070797000,
+        "stop" : 1637070797000,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 https://dpm.demdex.net/id?d_visid_ver=4.3.0&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=F4DB44D75C7CF5CF0A495D58%40AdobeOrg&d_nsid=0&ts=1637070793851",
+      "time" : {
+        "start" : 1637070797000,
+        "stop" : 1637070797000,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get https://bglgrouplimited.d3.sc.omtrdc.net/id?d_visid_ver=4.3.0&d_fieldgroup=A&mcorgid=F4DB44D75C7CF5CF0A495D58@AdobeOrg&mid=75302271090044122683949571665566244292&ts=1637070794825",
+      "time" : {
+        "start" : 1637070797000,
+        "stop" : 1637070797000,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 https://bglgrouplimited.d3.sc.omtrdc.net/id?d_visid_ver=4.3.0&d_fieldgroup=A&mcorgid=F4DB44D75C7CF5CF0A495D58%40AdobeOrg&mid=75302271090044122683949571665566244292&ts=1637070794825",
+      "time" : {
+        "start" : 1637070797000,
+        "stop" : 1637070797000,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "window",
+      "time" : {
+        "start" : 1637070797001,
+        "stop" : 1637070797004,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "spy-1",
+      "time" : {
+        "start" : 1637070797007,
+        "stop" : 1637070797007,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @viewSpy",
+      "time" : {
+        "start" : 1637070797007,
+        "stop" : 1637070801257,
+        "duration" : 4250
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected viewSpy to have been called exactly once, but it was never called",
+      "time" : {
+        "start" : 1637070801256,
+        "stop" : 1637070801256,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "POST 200 /cdn-cgi/rum?",
+      "time" : {
+        "start" : 1637070801257,
+        "stop" : 1637070801257,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "a6d63aa8f53c1d1f",
+      "name" : "functional/events.ts:2021-11-16T13:53:21.020Z",
+      "source" : "a6d63aa8f53c1d1f.png",
+      "type" : "image/png",
+      "size" : 210243
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 15
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Analytics - events tracking"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "505b78ebe64fac8e",
+        "reportUrl" : "https://karol-kujawski-wttech.github.io/cypress-training/20211116134923//#testresult/505b78ebe64fac8e",
+        "status" : "failed",
+        "statusDetails" : "Timed out retrying after 4000ms: expected viewSpy to have been called exactly once, but it was never called",
+        "time" : {
+          "start" : 1637063274899,
+          "stop" : 1637063284994,
+          "duration" : 10095
+        }
+      }, {
+        "uid" : "223780bfef720067",
+        "reportUrl" : "https://karol-kujawski-wttech.github.io/cypress-training/20211116134057//#testresult/223780bfef720067",
+        "status" : "failed",
+        "statusDetails" : "Timed out retrying after 4000ms: expected viewSpy to have been called exactly once, but it was never called",
+        "time" : {
+          "start" : 1637062764308,
+          "stop" : 1637062774043,
+          "duration" : 9735
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a618cfc911cf44b1.json",
+  "parameterValues" : [ ]
+}

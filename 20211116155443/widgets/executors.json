@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://karol-kujawski-wttech.github.io/cypress-training",
+  "buildOrder" : 20211116155443,
+  "buildName" : "GitHub Actions Run #1467127308",
+  "buildUrl" : "https://github.com/karol-kujawski-wttech/cypress-training/actions/runs/1467127308",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://karol-kujawski-wttech.github.io/cypress-training/20211116155443/"
+} ]

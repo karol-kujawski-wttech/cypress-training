@@ -1,0 +1,21 @@
+[ {
+  "uid" : "505b78ebe64fac8e",
+  "name" : "View event on page load",
+  "time" : {
+    "start" : 1637063274899,
+    "stop" : 1637063284994,
+    "duration" : 10095
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7911564e11b9610",
+  "name" : "Event on link click",
+  "time" : {
+    "start" : 1637063285043,
+    "stop" : 1637063287422,
+    "duration" : 2379
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

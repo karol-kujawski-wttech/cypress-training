@@ -41,7 +41,6 @@ jobs:
           browser: chrome
           spec: cypress/integration/visual/**
 
-
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
@@ -62,7 +61,7 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: tests/functional/build/allure-results
+          allure_results: build/allure-results
           allure_history: allure-history
           keep_reports: 20
           github_run_num: ${{ steps.timestamp.outputs.time }}

@@ -1,0 +1,342 @@
+{
+  "uid" : "9763f6cb346e7020",
+  "name" : "Percy CSS",
+  "fullName" : "Percy CSS",
+  "historyId" : "5c7dfdf0a777538d9cc8ce84106f5dca",
+  "time" : {
+    "start" : 1637062839799,
+    "stop" : 1637062847487,
+    "duration" : 7688
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "visitWithCookies (\"https://www.unilever.com/\"; \"[\n  {\n    \"name\": \"OptanonAlertBoxClosed\",\n    \"value\": \"2021-09-16T12:48:22.814Z\",\n    \"path\": \"/\",\n    \"domain\": \"www.unilever.com\",\n    \"httpOnly\": false,\n    \"secure\": false\n  }\n]\")",
+      "time" : {
+        "start" : 1637062839850,
+        "stop" : 1637062840919,
+        "duration" : 1069
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "setCookie OptanonAlertBoxClosed, 2021-09-16T12:48:22.814Z",
+        "time" : {
+          "start" : 1637062839851,
+          "stop" : 1637062839862,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "visit https://www.unilever.com/",
+        "time" : {
+          "start" : 1637062839862,
+          "stop" : 1637062840919,
+          "duration" : 1057
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET 200 https://cdn.cookielaw.org/consent/ee18b87b-4b88-44d8-91d8-6066f62c910e/ee18b87b-4b88-44d8-91d8-6066f62c910e.json",
+        "time" : {
+          "start" : 1637062840918,
+          "stop" : 1637062840918,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET 200 /mobile_navigation.json",
+        "time" : {
+          "start" : 1637062840919,
+          "stop" : 1637062840919,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "scrollTo bottom, {duration: 1000}",
+      "time" : {
+        "start" : 1637062840919,
+        "stop" : 1637062842045,
+        "duration" : 1126
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "GET 200 https://cdn.cookielaw.org/consent/ee18b87b-4b88-44d8-91d8-6066f62c910e/140c05a5-d19e-4ad3-b07d-46f7824ee271/en-us.json",
+      "time" : {
+        "start" : 1637062842043,
+        "stop" : 1637062842043,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "GET 200 https://cdn.cookielaw.org/scripttemplates/6.21.0/assets/otCommonStyles.css",
+      "time" : {
+        "start" : 1637062842043,
+        "stop" : 1637062842043,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://www.google-analytics.com/j/collect?v=1&_v=j96&a=67457267&t=pageview&_s=1&dl=https://www.unilever.com/&ul=en-us&de=UTF-8&dt=Unilever global company website | Unilever Global | Unilever global company website&sd=24-bit&sr=1280x720&vp=985x660&je=0&_u=YEBAAAABAAAAAC~&jid=309581830&gjid=574233448&cid=1824877894.1637062842&tid=UA-41903606-1&_gid=297046102.1637062842&_r=1&gtm=2wgba1TP4WJ2&cd103=244-415385-64&cd105=desktop&z=1811881674",
+      "time" : {
+        "start" : 1637062842043,
+        "stop" : 1637062842043,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j96&tid=UA-41903606-1&cid=1824877894.1637062842&jid=1063388017&gjid=1839115976&_gid=297046102.1637062842&_u=YGDAgAABAAAAAG~&z=801922554",
+      "time" : {
+        "start" : 1637062842044,
+        "stop" : 1637062842044,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get https://dpm.demdex.net/id?d_visid_ver=3.1.2&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=128981DD59DFA4DA0A495DB2@AdobeOrg&d_nsid=0&ts=1637062841824",
+      "time" : {
+        "start" : 1637062842044,
+        "stop" : 1637062842044,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j96&tid=UA-41903606-1&cid=1824877894.1637062842&jid=309581830&gjid=574233448&_gid=297046102.1637062842&_u=YEBAAAAAAAAAAC~&z=823529986",
+      "time" : {
+        "start" : 1637062842044,
+        "stop" : 1637062842044,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://www.google-analytics.com/j/collect?v=1&_v=j96&a=67457267&t=pageview&_s=1&dl=https%3A%2F%2Fwww.unilever.com%2F&ul=en-us&de=UTF-8&dt=Unilever%20global%20company%20website%20%7C%20Unilever%20Global%20%7C%20Unilever%20global%20company%20website&sd=24-bit&sr=1280x720&vp=985x660&je=0&_u=YEBAAAABAAAAAC~&jid=309581830&gjid=574233448&cid=1824877894.1637062842&tid=UA-41903606-1&_gid=297046102.1637062842&_r=1&gtm=2wgba1TP4WJ2&cd103=244-415385-64&cd105=desktop&z=1811881674",
+      "time" : {
+        "start" : 1637062842045,
+        "stop" : 1637062842045,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://dpm.demdex.net/id?d_visid_ver=3.1.2&d_fieldgroup=MC&d_rtbd=json&d_ver=2&d_orgid=128981DD59DFA4DA0A495DB2%40AdobeOrg&d_nsid=0&ts=1637062841824",
+      "time" : {
+        "start" : 1637062842045,
+        "stop" : 1637062842045,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "percySnapshot (\"Region ignoring\"; \"{\n  \"percyCSS\": \".share-price {display: none; }\"\n}\")",
+      "time" : {
+        "start" : 1637062842045,
+        "stop" : 1637062847486,
+        "duration" : 5441
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET 200 https://3lz1gykyyd.execute-api.eu-west-1.amazonaws.com/Prod/api/Visitor?ga=1824877894.1637062842&UID=UA-41903606-1&accountId=122649&startIndex=106&LFAId=LF1.1.312347874afc8526.1637062843847",
+        "time" : {
+          "start" : 1637062847484,
+          "stop" : 1637062847484,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "percySnapshot Region ignoring",
+        "time" : {
+          "start" : 1637062847484,
+          "stop" : 1637062847484,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET https://judxu4avx2.execute-api.eu-west-1.amazonaws.com/Prod/api/VisitorPush?gid=1824877894.1637062842&uid=UA-41903606-1&sid=106",
+        "time" : {
+          "start" : 1637062847485,
+          "stop" : 1637062847485,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET 200 https://unileverna.sc.omtrdc.net/id?d_visid_ver=3.1.2&d_fieldgroup=A&mcorgid=128981DD59DFA4DA0A495DB2%40AdobeOrg&mid=57368888076904343721768457906298014597&ts=1637062842068",
+        "time" : {
+          "start" : 1637062847486,
+          "stop" : 1637062847486,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "get https://unileverna.sc.omtrdc.net/id?d_visid_ver=3.1.2&d_fieldgroup=A&mcorgid=128981DD59DFA4DA0A495DB2@AdobeOrg&mid=57368888076904343721768457906298014597&ts=1637062842068",
+        "time" : {
+          "start" : 1637062847486,
+          "stop" : 1637062847486,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 20,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9763f6cb346e7020.json",
+  "parameterValues" : [ ]
+}

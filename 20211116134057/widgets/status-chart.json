@@ -1,0 +1,51 @@
+[ {
+  "uid" : "4b0d00dabd5a43a3",
+  "name" : "Search result tweak",
+  "time" : {
+    "start" : 1637062839799,
+    "stop" : 1637062839799,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2c83a64a15b05710",
+  "name" : "Event on link click",
+  "time" : {
+    "start" : 1637062774068,
+    "stop" : 1637062775729,
+    "duration" : 1661
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d0c1a198963bbca",
+  "name" : "Unilever",
+  "time" : {
+    "start" : 1637062839797,
+    "stop" : 1637062839799,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "9763f6cb346e7020",
+  "name" : "Percy CSS",
+  "time" : {
+    "start" : 1637062839799,
+    "stop" : 1637062847487,
+    "duration" : 7688
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "223780bfef720067",
+  "name" : "View event on page load",
+  "time" : {
+    "start" : 1637062764308,
+    "stop" : 1637062774043,
+    "duration" : 9735
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

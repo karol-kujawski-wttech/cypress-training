@@ -33,7 +33,7 @@ it("Search result tweak", () => {
 it("Percy CSS", () => {
   cy.visitWithCookies("https://www.unilever.com/", [UNI_CONSENT_COOKIE])
   .scrollTo("bottom", {
-      duration: 1000 
+      duration: 3000 
   });
   cy.percySnapshot("Region ignoring", {
       percyCSS: ".share-price {display: none; }"
